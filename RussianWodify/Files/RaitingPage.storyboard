@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="naa-rp-mpN">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </array>
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Рейтинг-->
+        <scene sceneID="fJJ-B7-oPm">
+            <objects>
+                <tableViewController id="naa-rp-mpN" customClass="RaitingPageViewController" customModule="RussianWodify" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="dbX-zv-SPp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="RaitingViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="Raiting View Cell" rowHeight="152" id="lF9-ic-hUV" customClass="RaitingViewCell" customModule="RussianWodify" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="152"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lF9-ic-hUV" id="QjY-oo-m97">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="152"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CrossFIT, сегодня в 7:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yAz-xA-gJr">
+                                            <rect key="frame" x="24" y="75" width="200" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="200" id="19B-cl-QbO"/>
+                                                <constraint firstAttribute="height" constant="21" id="BDg-CX-JcZ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="96p-eG-dQs">
+                                            <rect key="frame" x="16" y="112" width="342" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="342" id="FYm-tp-b3A"/>
+                                                <constraint firstAttribute="height" constant="29" id="gd8-cA-Ate"/>
+                                            </constraints>
+                                            <segments>
+                                                <segment title="Мужчины"/>
+                                                <segment title="Женщины"/>
+                                            </segments>
+                                        </segmentedControl>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Рейтинг" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ulh-Ui-rxx">
+                                            <rect key="frame" x="24" y="24" width="136" height="41"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="41" id="gxj-dE-yDz"/>
+                                                <constraint firstAttribute="width" constant="136" id="wim-Ie-Vff"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="34"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="96p-eG-dQs" firstAttribute="top" secondItem="QjY-oo-m97" secondAttribute="top" constant="112" id="1NR-T3-bCQ"/>
+                                        <constraint firstItem="96p-eG-dQs" firstAttribute="leading" secondItem="QjY-oo-m97" secondAttribute="leading" constant="16" id="Get-9P-b2h"/>
+                                        <constraint firstItem="Ulh-Ui-rxx" firstAttribute="top" secondItem="QjY-oo-m97" secondAttribute="top" constant="24" id="Kal-5R-3KE"/>
+                                        <constraint firstItem="yAz-xA-gJr" firstAttribute="top" secondItem="QjY-oo-m97" secondAttribute="top" constant="75" id="Lx2-25-Sj3"/>
+                                        <constraint firstAttribute="trailing" secondItem="96p-eG-dQs" secondAttribute="trailing" constant="17" id="fc2-4R-RHB"/>
+                                        <constraint firstItem="Ulh-Ui-rxx" firstAttribute="leading" secondItem="QjY-oo-m97" secondAttribute="leading" constant="24" id="hy5-As-YrR"/>
+                                        <constraint firstItem="yAz-xA-gJr" firstAttribute="leading" secondItem="QjY-oo-m97" secondAttribute="leading" constant="24" id="k74-61-97x"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="User In Raiting View Cell" rowHeight="79" id="lZ8-ca-bwX" customClass="UserInRaitingViewCell" customModule="RussianWodify" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="180" width="375" height="79"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lZ8-ca-bwX" id="Yif-lW-Rme">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4a0-iB-Tbd">
+                                            <rect key="frame" x="26" y="29" width="9" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="22" id="LNh-eU-ijQ"/>
+                                                <constraint firstAttribute="width" constant="9" id="R5R-eh-nE2"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ed6-mn-WCh">
+                                            <rect key="frame" x="51" y="15" width="48" height="48"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="48" id="DKy-ih-keX"/>
+                                                <constraint firstAttribute="width" constant="48" id="fZF-VG-ARm"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bill Armstrong" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVa-GW-bzA">
+                                            <rect key="frame" x="115" y="20" width="140" height="22"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1x3 @258 lbs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEs-iV-G5g">
+                                            <rect key="frame" x="115" y="43" width="140" height="17"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XMc-Jh-zug">
+                                            <rect key="frame" x="115" y="75.5" width="260" height="1"/>
+                                            <color key="backgroundColor" red="0.7843137255" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="Xxq-rr-en9"/>
+                                                <constraint firstAttribute="width" constant="260" id="ddp-Gk-TdV"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ed6-mn-WCh" firstAttribute="leading" secondItem="Yif-lW-Rme" secondAttribute="leading" constant="51" id="1eR-WW-eGw"/>
+                                        <constraint firstItem="rVa-GW-bzA" firstAttribute="top" secondItem="Yif-lW-Rme" secondAttribute="top" constant="20" id="857-jE-1po"/>
+                                        <constraint firstItem="lEs-iV-G5g" firstAttribute="top" secondItem="rVa-GW-bzA" secondAttribute="bottom" constant="1" id="KpJ-P6-13i"/>
+                                        <constraint firstItem="XMc-Jh-zug" firstAttribute="leading" secondItem="Yif-lW-Rme" secondAttribute="leading" constant="115" id="OLI-KX-ryU"/>
+                                        <constraint firstItem="4a0-iB-Tbd" firstAttribute="top" secondItem="Yif-lW-Rme" secondAttribute="top" constant="29" id="Txw-L8-OG1"/>
+                                        <constraint firstItem="4a0-iB-Tbd" firstAttribute="leading" secondItem="Yif-lW-Rme" secondAttribute="leading" constant="26" id="U2V-WO-AgL"/>
+                                        <constraint firstItem="ed6-mn-WCh" firstAttribute="top" secondItem="Yif-lW-Rme" secondAttribute="top" constant="15" id="ZBx-S3-KeY"/>
+                                        <constraint firstItem="rVa-GW-bzA" firstAttribute="leading" secondItem="Yif-lW-Rme" secondAttribute="leading" constant="115" id="aNP-tg-X3m"/>
+                                        <constraint firstItem="lEs-iV-G5g" firstAttribute="leading" secondItem="ed6-mn-WCh" secondAttribute="trailing" constant="16" id="jnW-Xo-D1i"/>
+                                        <constraint firstAttribute="bottom" secondItem="XMc-Jh-zug" secondAttribute="bottom" constant="2" id="yPq-oA-9zR"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="avatarImage" destination="ed6-mn-WCh" id="VL0-UN-D2M"/>
+                                    <outlet property="curPosition" destination="4a0-iB-Tbd" id="zKK-Ya-Hi1"/>
+                                    <outlet property="fullName" destination="rVa-GW-bzA" id="okv-6r-h66"/>
+                                    <outlet property="record" destination="lEs-iV-G5g" id="bQv-Fc-ZhX"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="naa-rp-mpN" id="INP-Ae-wGg"/>
+                            <outlet property="delegate" destination="naa-rp-mpN" id="RyW-6h-Mh6"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Рейтинг" image="raitings" id="ZAG-08-0kX"/>
+                    <navigationItem key="navigationItem" id="wcQ-aw-gSR"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SU6-4Q-FA3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-335.19999999999999" y="-343.17841079460271"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="raitings" width="27" height="27"/>
+    </resources>
+</document>

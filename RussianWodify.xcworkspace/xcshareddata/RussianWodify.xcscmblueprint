@@ -1,0 +1,29 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "972726D1395444873FB210ADA45D0206B768CE3B" : 9223372036854775807,
+    "C56E9BB0A6D3B612A8657B17D2D45C50898787C9" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3E4A0E4B-0938-47B1-9DD4-60DAD6024447",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "972726D1395444873FB210ADA45D0206B768CE3B" : "",
+    "C56E9BB0A6D3B612A8657B17D2D45C50898787C9" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RussianWodify",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RussianWodify.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/askarakshabayev\/wodify.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "972726D1395444873FB210ADA45D0206B768CE3B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Elibay\/IOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C56E9BB0A6D3B612A8657B17D2D45C50898787C9"
+    }
+  ]
+}

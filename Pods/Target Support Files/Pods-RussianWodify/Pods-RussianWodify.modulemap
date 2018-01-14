@@ -1,0 +1,6 @@
+framework module Pods_RussianWodify {
+  umbrella header "Pods-RussianWodify-umbrella.h"
+
+  export *
+  module * { export * }
+}

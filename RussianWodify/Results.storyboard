@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17A365" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="se5-OO-40x">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Мои результаты-->
+        <scene sceneID="cij-e9-MGz">
+            <objects>
+                <viewController id="se5-OO-40x" customClass="ResultsViewController" customModule="RussianWodify" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0FU-sg-sux"/>
+                        <viewControllerLayoutGuide type="bottom" id="vHc-hj-Okh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dM8-47-oTP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.81999999999999995" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8DO-a3-1Dn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мои результаты" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLo-T9-2T4">
+                                        <rect key="frame" x="24" y="36" width="276" height="41"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="HLo-T9-2T4" firstAttribute="top" secondItem="8DO-a3-1Dn" secondAttribute="top" constant="36" id="3fb-bf-4Ln"/>
+                                    <constraint firstAttribute="height" constant="99" id="Xju-I6-GZv"/>
+                                    <constraint firstItem="HLo-T9-2T4" firstAttribute="leading" secondItem="8DO-a3-1Dn" secondAttribute="leading" constant="24" id="nPq-Cp-Tae"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Cay-Qb-pB0">
+                                <rect key="frame" x="0.0" y="99" width="375" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="WgD-hd-5LJ"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="i9Y-3u-bMP">
+                                    <size key="itemSize" width="72" height="30"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="colCell" id="q9q-Cd-1eQ" customClass="ResultsCompCollectionViewCell" customModule="RussianWodify" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Emx-FW-8t9">
+                                                    <rect key="frame" x="15" y="5.5" width="42.5" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                    <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kq3-JN-CZT">
+                                                    <rect key="frame" x="0.0" y="28" width="72" height="2"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="2" id="oiL-xP-gKI"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Kq3-JN-CZT" secondAttribute="trailing" id="7SN-pB-jH3"/>
+                                            <constraint firstItem="Emx-FW-8t9" firstAttribute="centerX" secondItem="q9q-Cd-1eQ" secondAttribute="centerX" id="AaA-uQ-1ur"/>
+                                            <constraint firstItem="Kq3-JN-CZT" firstAttribute="leading" secondItem="q9q-Cd-1eQ" secondAttribute="leading" id="J5g-FG-Th7"/>
+                                            <constraint firstAttribute="bottom" secondItem="Kq3-JN-CZT" secondAttribute="bottom" id="fFm-wc-UZZ"/>
+                                            <constraint firstItem="Emx-FW-8t9" firstAttribute="centerY" secondItem="q9q-Cd-1eQ" secondAttribute="centerY" id="urO-oY-ubC"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="horView" destination="Kq3-JN-CZT" id="pl0-66-15P"/>
+                                            <outlet property="nameLabel" destination="Emx-FW-8t9" id="uad-Le-Qgh"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="50z-La-R8h">
+                                <rect key="frame" x="0.0" y="129" width="375" height="489"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="resultCell" id="kEb-YG-xUi" customClass="WorkoutResultsTableViewCell" customModule="RussianWodify" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kEb-YG-xUi" id="Yxp-Mt-zRy">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="50z-La-R8h" firstAttribute="top" secondItem="Cay-Qb-pB0" secondAttribute="bottom" id="0A8-aX-48p"/>
+                            <constraint firstItem="8DO-a3-1Dn" firstAttribute="top" secondItem="dM8-47-oTP" secondAttribute="top" id="5xv-s1-3hf"/>
+                            <constraint firstAttribute="trailing" secondItem="Cay-Qb-pB0" secondAttribute="trailing" id="78Z-xE-wDs"/>
+                            <constraint firstAttribute="trailing" secondItem="8DO-a3-1Dn" secondAttribute="trailing" id="Jc0-WK-sDP"/>
+                            <constraint firstItem="8DO-a3-1Dn" firstAttribute="leading" secondItem="dM8-47-oTP" secondAttribute="leading" id="UOa-AB-4l4"/>
+                            <constraint firstItem="Cay-Qb-pB0" firstAttribute="leading" secondItem="dM8-47-oTP" secondAttribute="leading" id="ezq-vr-k0T"/>
+                            <constraint firstItem="vHc-hj-Okh" firstAttribute="top" secondItem="50z-La-R8h" secondAttribute="bottom" id="fn2-JP-Gas"/>
+                            <constraint firstItem="50z-La-R8h" firstAttribute="leading" secondItem="dM8-47-oTP" secondAttribute="leading" id="l3c-6g-1r6"/>
+                            <constraint firstItem="Cay-Qb-pB0" firstAttribute="top" secondItem="8DO-a3-1Dn" secondAttribute="bottom" id="ta5-hK-AJ1"/>
+                            <constraint firstAttribute="trailing" secondItem="50z-La-R8h" secondAttribute="trailing" id="vIV-r5-sHY"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Мои результаты" image="results" id="jHJ-yg-5iw"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Cay-Qb-pB0" id="MOs-aB-3iT"/>
+                        <outlet property="tableView" destination="50z-La-R8h" id="csa-ne-JgY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tBN-Xl-6eK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-194.40000000000001" y="-81.409295352323838"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="results" width="27" height="27"/>
+    </resources>
+</document>
